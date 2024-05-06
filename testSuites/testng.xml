@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite  name="Suite">
+	
+	<listeners>
+		<listener class-name="AutomationCasesProject.TestComponents.Listeners"/>
+	</listeners>
+  <test thread-count="5" name="Test">
+	  <parameter name="URL" value="Akshay.com"/>
+    <classes>
+      <class name="AutomationCasesProject.TestCases.ErrorValidation" />
+      <class name="AutomationCasesProject.ExtentReports.ExtentReportsDemo"/>
+      <class name="AutomationCasesProject.TestCases.rahulShettyWebsiteCases"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
